@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .gallery {
+            margin: 2% 5%;
+        }
+        .gallery__item {
+            width: 30%;
+        }
+        .gallery__buttons {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .gallery__btn_back,
+        .gallery__btn_forward {
+            color: whitesmoke;
+            background-color: darkslategrey;
+        }
+        .gallery__title {
+            color: darkslategrey;
+            font-family: 'Fira Sans', Times, serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.875em;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <h1 class="gallery__title">Gallery</h1>
+        <div class="gallery__items">
+            <img class="gallery__item" src="" alt="" id="image">
+        </div>
+        <div class="gallery__buttons">
+            <button class="gallery__btn_back" onclick="back()">Back</button>
+            <button class="gallery__btn_forward" onclick="forward()">Forward</button>
+        </div>    
+    </div>
+
+    <script src="./gallery.js"></script>
+</body>
+</html>
